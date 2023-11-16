@@ -4,5 +4,9 @@ type Player @model {
   type: String
   country: String
   picture_link: String
-  city: String
+  runs: String
+  innings:String
+  wickets:String
+  sixes:String
+  average:String
 }
