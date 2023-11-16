@@ -8,7 +8,7 @@
   <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
     <div fxFlex="50">
       <h1>
-        {{ player.name }} <small> - {{ player.city }}</small>
+        {{ player.name }} <small> - {{ player.runs }}</small>
       </h1>
       <mat-divider></mat-divider>
       <img [src]="player | image" />
@@ -17,7 +17,7 @@
     <div fxFlex="50">
       <h1>{{ player.type }}</h1>
       <mat-list>
-        <mat-list-item>Team : {{ player.city }}</mat-list-item>
+        <mat-list-item>Team : {{ player.runs }}</mat-list-item>
         <mat-list-item>Country : {{ player.country }}</mat-list-item>
         <mat-list-item>Type : {{ player.type }}</mat-list-item>
       </mat-list>
