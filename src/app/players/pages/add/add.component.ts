@@ -40,7 +40,8 @@ export class AddComponent implements OnInit {
     name: " ",
     type: Type.Contract,
     country: " ",
-    city: "",
+    runs: "",
+    wickets: "",
     picture_link: " ",
   };
 
