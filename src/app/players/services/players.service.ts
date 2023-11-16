@@ -10,7 +10,8 @@ const get_players = gql`
         id
         name
         type
-        city
+        runs
+        wickets
         country
         picture_link
       }
@@ -26,7 +27,8 @@ const get_player = gql`
       id
       name
       type
-      city
+      runs
+      wickets
       country
       picture_link
     }
@@ -130,7 +132,8 @@ export class playersService {
           id: player.id,
           name: player.name,
           country: player.country,
-          wikipedia_link: player.city,
+          wickets:player.wickets,
+          runs: player.runs,
           picture_link: player.picture_link,
         },
       },
@@ -147,7 +150,8 @@ export class playersService {
           id: player.id,
           name: player.name,
           country: player.country,
-          wikipedia_link: player.city,
+          wickets:player.wickets,
+          runs: player.runs,
           picture_link: player.picture_link,
         },
       },

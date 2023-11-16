@@ -2,8 +2,9 @@ export interface player {
   id?: string;
   name: string;
   type: Type;
-  city: string;
+  wickets: string;
   country: string;
+  runs:string;
   picture_link?: string;
 }
 
